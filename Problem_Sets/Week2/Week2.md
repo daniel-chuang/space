@@ -77,3 +77,78 @@ $m_2 = 1t$
 
 $\frac{m_1}{m_2} = \exp{(5.647)} \approx 283.61$
 $m_1 = 283.61t$
+
+### Problem Set Level 2
+
+#### 2.1
+
+Notes:
+Knowns:
+0.45 ton satellite cargo
+1.5 ton circulization engine
+320s specific impulse circulization engine
+1200 $\Delta v \frac{m}{s}$ needed
+$m_{t} = \frac{1}{8}m_{f}$ where $m_t$ is the mass of the fuel tank and $m_f$ is the mass of the fuel
+
+Unknowns:
+What is the total mass of fuel needed? $m_{f}$
+What is the total mass for the initial launch burn
+
+$\Delta v = I_{sp} g \ln{(\frac{m_1}{m_2})}$
+$\Delta 1200 \frac{m}{s} = 320s \frac{9.8m}{s^2} \ln{(\frac{m_1}{m_2})}$
+$\Delta 1200 \frac{m}{s} = 320s \frac{9.8m}{s^2} \ln{(\frac{(0.45 + 1.5 + \frac{9\cdot m_{f}}{8}) t}{(0.45 + 1.5 + \frac{m_{f}}{8})})}$
+$\Delta 1200 \frac{m}{s} = 320s \frac{9.8m}{s^2} \ln{(\frac{(0.45 + 1.5 + \frac{9\cdot m_{f}}{8}) t}{(0.45 + 1.5 + \frac{m_{f}}{8})t})}$
+
+$\frac{(0.45 + 1.5 + \frac{9\cdot m_{f}}{8}) t}{(0.45 + 1.5 + \frac{m_{f}}{8})t} = \exp{(\frac{1200\frac{m}{s}}{320s\frac{9.8m}{s^2}})}$
+$\frac{1.95 + \frac{9\cdot m_{f}}{8}}{1.95 + \frac{m_{f}}{8}} = \exp{(0.383)}$
+$1.95+\frac{9m_f}{8} = 1.466(1.95+\frac{m_f}{8})$
+$1.95+\frac{9m_f}{8} = 2.8587 + 1.466 \frac{m_f}{8}$
+$m_f = 0.965$
+
+The total mass that would be needed to bring at the initial launch burn for this stage would equal $3.035625$
+
+#### 2.2
+
+$\Delta v = I_{sp} g \ln{(\frac{m_1}{m_2})}$
+$\Delta 1200 \frac{m}{s} = 345s \frac{9.8m}{s^2} \ ln{(\frac{(0.45 + 0.5 + \frac{9}{8}m_f)t}{(0.45 + 0.5 + \frac{m_f}{8})t})}$
+$\frac{0.95 + \frac{9m_f}{8}}{0.95 + \frac{m_f}{8}} = \exp{(\frac{1200}{3,381})}$
+$m_f = 0.42754$
+
+#### 2.3
+
+Each module has 90 tons initially
+Each module has 20 tons of final mass
+Each module has a specific impulse of 235s
+
+##### 2.3.a
+
+5 ton payload
+$\Delta v = 235s \cdot 9.8\frac{m}{s^2} \cdot \ln{\frac{(90 + 5)t}{(20 + 5)t}}$
+$\Delta v = 2,303\frac{m}{s} \ln{(3.8)} = 3,074.51\frac{m}{s}$
+
+##### 2.3.b
+
+10 ton payload
+$\Delta v = 235s \cdot 9.8\frac{m}{s^2} \cdot \ln{\frac{(90 + 10)t}{(20 + 10)t}}$
+$\Delta v = 2,303\frac{m}{s} \ln{(3.\bar{3})} = 2,772.75\frac{m}{s}$
+
+##### 2.3.c
+
+5 ton payload, two modules used
+$\Delta v = 235s \cdot 9.8\frac{m}{s^2} \cdot \ln{\frac{(90 + 90 + 5)t}{(20 + 20 + 5)t}}$
+$\Delta v = 2,303\frac{m}{s} \ln{(4.\bar{1})} = 3,255.74\frac{m}{s}$
+
+##### 2.3.d
+
+10 ton payload, two modules used
+$\Delta v = 235s \cdot 9.8\frac{m}{s^2} \cdot \ln{\frac{(90 + 90 + 10)t}{(20 + 20 + 10)t}}$
+$\Delta v = 2,303\frac{m}{s} \ln{(3.8)} = 3,074.51\frac{m}{s}$
+
+##### 2.3.e
+
+How do rockets work as the masses scale up?
+They don't scale up well, especially if they are heavy compared to the cargo.
+
+#### 2.4
+
+Bigger is not always better in rocket design. The bigger the ratio $\frac{m_1}{m_2}$ is, the greater the $\Delta v$, where $m_2$ is the final mass of the rocket. Since there will always be mass in the rocket from components such as the command pod, engines, fuel tanks, wings, and parachutes even after all fuel is burned, the heavier (which generally correlates to size) these components are, the more fuel will be needed to make $m_1$ greater.
