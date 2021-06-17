@@ -4,6 +4,8 @@ A github repository for my work during the fifth-term elective class at my schoo
 
 All assignments from [https://rdsf-ave.github.io/index.html](https://rdsf-ave.github.io/index.html)
 
+For personal reference, tutorials can be found here: [https://wiki.kerbalspaceprogram.com/wiki/Tutorials](https://wiki.kerbalspaceprogram.com/wiki/)
+
 #### [Milestone Missions in KSP:](https://rdsf-ave.github.io/milestones.html)
 
 - [X] Launch-and-Land: Successfully launch a manned rocket, land it safely, and recover the totally fine pilot.
